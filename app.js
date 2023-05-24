@@ -6,6 +6,7 @@ function Menu(e){
 }
 
 //This code is for the calculator to function correctly
+
 //Function To Display Values On screen
 function dis(value) {
     document.getElementById("screen").value += value;
