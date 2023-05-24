@@ -29,3 +29,8 @@ function backspace() {
    let screen = document.getElementById("screen").value;
     document.getElementById("screen").value = screen.substring(0, screen.length - 1);
 }
+
+//To Enlarge image
+function change(element) {
+    element.classList.toggle("fullsize");
+}

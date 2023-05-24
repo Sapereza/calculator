@@ -1,0 +1,13 @@
+.fullsize{
+    border: none;
+    z-index: 999;
+    cursor: zoom-out;
+    display: block;
+    width: 400;
+    max-width: 400;
+    height: 550;
+    position: fixed;
+    left: 100px;
+    top: 30px;
+    background-color: aliceblue;
+}
