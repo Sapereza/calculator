@@ -24,7 +24,7 @@ function clr() {
 }
 
 //backspacing
-function backspace() {
-    let screen = document.getElementById("screen").value;
-    document.getElementById("screen").value = screen.substring(0, screen.length - 1);
-}
+//function backspace() {
+//   let screen = document.getElementById("screen").value;
+//    document.getElementById("screen").value = screen.substring(0, screen.length - 1);
+//}
