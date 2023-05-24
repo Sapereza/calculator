@@ -124,8 +124,8 @@ module.exports = {
 
     },
 
-    variants:{
-      backgroundColor: ['responsive', 'hover','focus','active']
+  variants:{
+    backgroundColor: ['responsive', 'hover','focus','active']
     },
 
   },

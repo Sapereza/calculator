@@ -43,13 +43,39 @@
 
 
     <main class="flex justify-center my-10">
-        <div class="container bg-gray-200/80 w-350 h-550 flex flex-col justify-center shadow-md shadow-black drop-shadow-2xl rounded-md">
+        <div class="container bg-gradient-to-tl from-gray-400/80 via-white/80 to-gray-400/80 w-350 h-550 flex flex-col justify-center shadow-md shadow-black drop-shadow-2xl rounded-md">
             
-            <output id="result" class="bg-white w-325 h-100 rounded-md mx-3 text-right text-7xl px-2 shadow-inner shadow-black contrast-150 font-extrabold"></output>
+            <output id="screen" class="bg-white w-325 h-100 rounded-md mx-3 text-right text-7xl px-2 shadow-inner shadow-black contrast-150 font-extrabold"></output>
 
-            <div class="grid grid-rows-5 grid-cols-5 text-white text-center text-3xl font-extrabold gap-2 mx-2">      
-                <input type="button" value="7" onclick="dis('7')" class="col-start-1 row-start-1 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
-                <input type="button" value="8" onclick="dis('8')" class="col-start-2 row-start-1 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+            <div class="grid grid-rows-5 grid-cols-4 text-white text-center text-3xl font-extrabold gap-2 mx-2">      
+                <input type="button" value="AC" onclick="clr()" class="col-start-1 row-start-1 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                <input type="button" value="+/-" onclick="dis('+/-')" class="col-start-2 row-start-1 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                <input type="button" value="%" onclick="dis('%')" class="col-start-3 row-start-1 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                <input type="button" value="&#247" onclick="dis('&#247')" class="col-start-4 row-start-1 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                
+                <!--START OF ROW TWO-->
+                <input type="button" value="7" onclick="dis('7')" class="col-start-1 row-start-2 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                <input type="button" value="8" onclick="dis('8')" class="col-start-2 row-start-2 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                <input type="button" value="9" onclick="dis('9')" class="col-start-3 row-start-2 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                <input type="button" value="x" onclick="dis('x')" class="col-start-4 row-start-2 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                
+                 <!--START OF ROW THREE-->
+                 <input type="button" value="4" onclick="dis('4')" class="col-start-1 row-start-3 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 <input type="button" value="5" onclick="dis('5')" class="col-start-2 row-start-3 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 <input type="button" value="6" onclick="dis('6')" class="col-start-3 row-start-3 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 <input type="button" value="-" onclick="dis('-')" class="col-start-4 row-start-3 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 
+                 <!--START OF ROW FOUR-->
+                 <input type="button" value="1" onclick="dis('1')" class="col-start-1 row-start-4 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 <input type="button" value="2" onclick="dis('2')" class="col-start-2 row-start-4 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 <input type="button" value="3" onclick="dis('3')" class="col-start-3 row-start-4 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 <input type="button" value="+" onclick="dis('+')" class="col-start-4 row-start-4 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 
+                 <!--START OF ROW FIVE-->
+                 <input type="button" value="0" onclick="dis('0')" class="col-start-1 row-start-5 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 <input type="button" value="." onclick="dis('.')" class="col-start-2 row-start-5 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+                 <input type="button" value="=" onclick="solve()" class="col-span-2 row-start-5 mt-4 p-2 bg-gradient-to-tl from-zinc-800 via-zinc-500 to-zinc-800 active:bg-gradient-to-r active:from-zinc-700 active:via-zinc-400 active:to-zinc-700 active:shadow-inner rounded-md shadow-black shadow-md"></input>
+
             </div>
             
 
@@ -97,3 +123,4 @@
     <script src="app.js"></script>
 </body>
 </html>
+
