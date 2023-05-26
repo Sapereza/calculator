@@ -3,11 +3,12 @@
     z-index: 999;
     cursor: zoom-out;
     display: block;
-    width: 400;
-    max-width: 400;
-    height: 550;
+    width: 800;
+    max-width: 800;
+    height: 900;
     position: fixed;
-    left: 100px;
-    top: 30px;
-    background-color: aliceblue;
+    left: 50%;
+    top: 50%;
+    right: 50%;
+
 }
